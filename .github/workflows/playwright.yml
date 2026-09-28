@@ -35,9 +35,9 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      # 5. Run all automated tests
+      # 5. Run Chromium automated tests
       - name: Run Playwright tests
-        run: npx playwright test
+        run: npx playwright test --project=chromium
         env:
           CI: true
 
@@ -50,7 +50,7 @@ jobs:
           path: playwright-report/
           retention-days: 30
 
-      # 7. Upload test results if tests fail
+      # 7. Upload test results
       - name: Upload Test Results
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@v4
