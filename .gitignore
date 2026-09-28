@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Playwright generated files
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Coverage reports
+coverage/
+
+# Log files
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/ 
+
+# SQLite database files
+database/*.db
+database/*.db-shm
+database/*.db-wal

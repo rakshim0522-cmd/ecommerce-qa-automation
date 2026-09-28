@@ -1,0 +1,16 @@
+{
+    "newProduct": {
+        "title": "QA Automation Test Product",
+        "price": 99.99,
+        "description": "Product created through Playwright API automation",
+        "category": "qa-testing"
+    },
+
+    "updatedProduct": {
+        "title": "Updated QA Automation Product",
+        "price": 149.99
+    },
+
+    "invalidProductId": 999999,
+    "productId": 1
+}

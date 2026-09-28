@@ -1,0 +1,36 @@
+{
+  "name": "ecommerce-qa-automation",
+  "version": "1.0.0",
+  "description": "End-to-end QA automation framework using Playwright, JavaScript, API testing and SQLite database validation",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:smoke": "playwright test --grep \"@smoke\" --project=chromium",
+    "test:regression": "playwright test --grep \"@regression\" --project=chromium",
+    "test:ui": "playwright test tests/ui --project=chromium",
+    "test:api": "playwright test tests/api --project=chromium",
+    "test:database": "playwright test tests/database --project=chromium",
+    "test:integration": "playwright test tests/integration --project=chromium",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "qa",
+    "test-automation",
+    "playwright",
+    "javascript",
+    "api-testing",
+    "database-testing",
+    "e2e-testing"
+  ],
+  "author": "Rakshitha",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "validCustomer": {
+        "firstName": "Rakshitha",
+        "lastName": "QA",
+        "postalCode": "560001"
+    },
+
+    "invalidCustomer": {
+        "firstName": "",
+        "lastName": "",
+        "postalCode": ""
+    }
+}
